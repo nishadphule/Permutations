@@ -1,5 +1,3 @@
-<img src = "https://media.geeksforgeeks.org/wp-content/cdn-uploads/NewPermutation.gif">
-
 public class Permutation{
     public static void main(String[] args) {
         Permutation("ABC", "");                                            //Calling the Function Permutation
