@@ -1,0 +1,29 @@
+<img src = "https://media.geeksforgeeks.org/wp-content/cdn-uploads/NewPermutation.gif">
+
+public class Permutation{
+    public static void main(String[] args) {
+        Permutation("ABC", "");                                            //Calling the Function Permutation
+    }
+    public static void Permutation(String q, String ans) {
+        if(q.isEmpty())                                                    //If our string is empty we simply print the ans variable
+        System.out.println(ans);
+        else{
+            for (int i = 0; i < q.length(); i++) {
+                char ch = q.charAt(i);                                     //Taking the permutation for every character in the given string
+                String leftpart = q.substring(0, i);                      //Taking the part towards right of our current character
+                String rightpart = q.substring(i+1);                      //Taking the part towards left of our current character
+                String rest = leftpart + rightpart;                       //Obtaining the remaining part of the String which is to be Permutated
+                Permutation(rest, ans + ch);                              //Calling our function again to work upon the above passed string
+            }
+        }
+    }
+}
+
+// Output 
+
+ABC
+ACB
+BAC
+BCA
+CAB
+CBA

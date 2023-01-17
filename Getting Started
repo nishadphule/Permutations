@@ -1,0 +1,7 @@
+What are Permutations :
+
+Say you are given a string for example "ABC" so the possible permutations of the given string are number of ways in which you can print the given string with characters in different orders.
+So the permutations of given string would be :
+"ABC", "ACB", "BAC", "BCA", "CAB", "CBA"
+
+So to print such a series head on to the code section to find out how you can print a series like this using Recursion as well as Iteration.
